@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+        background-color: yellow;
+        color:red;
+        font-style: italic;
+        }
+
+    #divtimer, #divword, #divscore {
+        font-size: 2rem;
+        margin: 10px;
+        text-align: center;
+    }
+
+    #inpword {
+        font-size: 1.5rem;
+        padding: 10px;
+        width: 100%;
+        max-width: 400px;
+        margin-top: 20px;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        color:blue
+    }
+
+    input[type="button"] {
+        margin: 15px;
+        font-size: 1.2rem;
+        padding: 8px 16px;
+        color:blue;
+    }
+    </style>
+</head>
+<body> 
+    <h1> Typing Master </h1>
+    <div id = "divtimer" style = "color:red" > </div>
+    <div id = "divword" style = "color:blue">   </div>
+    </div>
+    <form>
+        <input type = "button"  value = "Start Game" onclick="disp()">
+        <input type = "text"  id = "inpword" placeholder="Enter Text as shown:" onkeyup="mat_word()">
+        <div id = "divscore" style = "color:blue"></div>
+            <h1> Score:: </h1>
+        </div>
+
+    </form>
+
+
+    <script src = "typ_mast.js">    </script>
+
+    
+</body>
+</html>
